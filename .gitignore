@@ -1,0 +1,11 @@
+# Publish only the site pages
+*
+!*/
+!.gitignore
+!.nojekyll
+!index.html
+!rea-reelshort/report.html
+!rea-penguin/report.html
+!rea-toonblast/report.html
+!rea-multi/out/*.html
+!meta-ads/index.html

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing teardowns</title>
+<style>
+  :root {
+    --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 32px; --space-6: 48px;
+    --text-sm: 14px; --text-base: 16px; --text-lg: 20px; --text-xl: 32px;
+    --radius: 8px;
+    --color-bg: #ffffff; --color-surface: #f6f6f4; --color-text: #161616;
+    --color-muted: #6b6b66; --color-border: #e4e4df; --color-accent: #1f4fd8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --color-bg: #121212; --color-surface: #1b1b1a; --color-text: #ededea;
+            --color-muted: #9a9a94; --color-border: #2c2c2a; --color-accent: #8aa8ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text);
+         font: var(--text-base)/1.5 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: var(--space-6) var(--space-4); }
+  h1 { font-size: var(--text-xl); line-height: 1.2; margin: 0 0 var(--space-2); }
+  .lede { color: var(--color-muted); margin: 0 0 var(--space-6); }
+  h2 { font-size: var(--text-sm); font-weight: 600; color: var(--color-muted); margin: var(--space-5) 0 var(--space-2); }
+  ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--color-border); }
+  li { border-bottom: 1px solid var(--color-border); }
+  a { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3);
+      padding: var(--space-3) var(--space-2); color: var(--color-text); text-decoration: none; border-radius: var(--radius); }
+  a:hover, a:focus-visible { background: var(--color-surface); outline: none; }
+  a:hover .title { color: var(--color-accent); }
+  .title { font-size: var(--text-lg); }
+  .meta { font-size: var(--text-sm); color: var(--color-muted); white-space: nowrap; }
+  footer { margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Marketing teardowns</h1>
+  <p class="lede">Teardowns of how consumer apps, games and publishers market themselves, by Rohan Uddin.</p>
+
+  <h2>Holiday and full-year teardowns</h2>
+  <ul>
+    <li><a href="rea-reelshort/report.html"><span class="title">ReelShort</span><span class="meta">Holiday</span></a></li>
+    <li><a href="rea-penguin/report.html"><span class="title">Penguin Books</span><span class="meta">Holiday</span></a></li>
+    <li><a href="rea-toonblast/report.html"><span class="title">Toon Blast</span><span class="meta">Full year</span></a></li>
+  </ul>
+
+  <h2>Short-drama apps</h2>
+  <ul>
+    <li><a href="rea-multi/out/dramabox.html"><span class="title">DramaBox</span><span class="meta">Teardown</span></a></li>
+    <li><a href="rea-multi/out/pinedrama.html"><span class="title">PineDrama</span><span class="meta">Teardown</span></a></li>
+    <li><a href="rea-multi/out/reelygo.html"><span class="title">ReelyGo</span><span class="meta">Teardown</span></a></li>
+    <li><a href="rea-multi/out/vibeshort.html"><span class="title">VibeShort</span><span class="meta">Teardown</span></a></li>
+  </ul>
+
+  <h2>Ad libraries</h2>
+  <ul>
+    <li><a href="meta-ads/index.html"><span class="title">Meta ads: ReelShort and Penguin Books</span><span class="meta">Ad log</span></a></li>
+  </ul>
+
+  <footer>9 reports. Each page is self-contained.</footer>
+</main>
+</body>
+</html>
